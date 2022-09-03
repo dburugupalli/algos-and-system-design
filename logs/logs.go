@@ -16,3 +16,4 @@ func main() {
 
 // Panicln is Println() followed by a call to panic()
 	log.Panicln("panic message")
+}

@@ -1,15 +1,15 @@
 package main
 
 func QuickSort(arr []int) []int {
-	newArr := make([]int, len(arr))
+	sorted_array := make([]int, len(arr))
 
 	for i, v := range arr {
-		newArr[i] = v
+		sorted_array[i] = v
 	}
 
-	sort(newArr, 0, len(arr)-1)
+	sort(sorted_array, 0, len(arr)-1)
 
-	return newArr
+	return sorted_array
 }
 
 func sort(arr []int, start, end int) {

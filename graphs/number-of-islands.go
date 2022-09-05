@@ -7,11 +7,12 @@ func numberOfIslands(arr int[][]) int {
   for i=0; i<len(arr); i++{
     for j=0; j< len(arr[0]); j++{
       if arr[i][j] == '1' {
+        count = count +1
         callBFS(grid, i, j)
       }
     }
   }
-  return answer;
+  return count;
 }
 
 func callBFS(arr int[][], i int, j int) {

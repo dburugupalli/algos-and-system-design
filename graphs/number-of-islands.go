@@ -15,8 +15,9 @@ func numberOfIslands(arr int[][]) int {
 }
 
 func callBFS(arr int[][], i int, j int) {
-  if i<0 || i >= len(arr) || j<=0 || j>=len(arr[0]) || grid[i][j] == '0'{
-    grid[i][j] = '0'
+  if i<0 || i >= len(arr) || j<=0 || j>=len(arr[0]) || grid[i][j] == '0' {
+    return
+  }
     // to cover up, down, right and left. 
     callBFS(arr, i, j+1)
     callBFS(arr, i-1, j)
